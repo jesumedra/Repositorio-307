@@ -1,0 +1,237 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: #017582; /* tu color verde */
+}
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 20vmin;
+  pointer-events: none;
+
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #017582;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+button {
+  width: 150px;
+  height: 35px;
+  margin: 15px;
+  color: #ffffff;
+  background-color: #017582;
+
+}
+/* CARD PRINCIPAL */
+.card {
+  width: 1000px;
+  padding: 25px;
+  border-radius: 10px;
+  border: 2px solid #000000;
+  background-color: #004568;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-family: Arial;
+  margin: auto;
+}
+
+.title {
+  color: rgb(255, 255, 255);
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+/* SEXO */
+.sexo-container {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.sexo-btn {
+  flex: 1;
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  background-color: #f3e9ff;
+}
+
+.mujer-select {
+  background-color: #ff00d9 !important;
+}
+
+.hombre-select {
+  background-color: #005eff !important;
+}
+
+/* INPUTS */
+.input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  margin-bottom: 10px;
+}
+
+/* BOTÓN CALCULAR */
+.calcular-btn {
+  background-color: #0075b9;
+  padding: 10px;
+  color: rgb(0, 0, 0);
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+/* RESULTADO */
+.resultado-box {
+  margin-top: 20px;
+  text-align: center;
+  color: black;
+}
+
+.resultado-text {
+  font-weight: bold;
+  margin-bottom: 15px;
+  color: black;
+}
+
+/* BOTÓN REINICIAR */
+.reiniciar-btn {
+  background-color: #ff6b6b;
+  padding: 8px 15px;
+  color: rgb(0, 0, 0);
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+/* ===== CONTENEDOR PRINCIPAL ===== */
+.dispensador-container {
+    width: 700px;
+    margin: 0 auto;
+    position: relative;
+    padding: 20px;
+    background: #2c2c2c;
+    color: white;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.5);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: Arial;
+    top: -500px; /* Ajusta según tu fondo */
+}
+
+/* ===== TÍTULO ===== */
+.dispensador-titulo {
+    font-size: 22px;
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+/* ===== INFO DE PRECIO Y LÍMITE ===== */
+.dispensador-info {
+    font-size: 14px;
+    color: #ccc;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+/* ===== DISPLAY ===== */
+.dispensador-display {
+    width: 100%;
+    min-height: 80px;
+    background: #000;
+    color: #0f0;
+    font-size: 20px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding: 10px;
+    box-shadow: inset 0 0 10px rgba(0,255,0,0.4);
+}
+
+/* ===== BOTONES ===== */
+
+.btn {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.3);
+    transition: .2s;
+}
+
+.btn-surtir {
+    background: #28a745;
+    color: white;
+}
+.btn-surtir:hover {
+    background: #32c85c;
+}
+
+.btn-detener {
+    background: #ffaa00;
+    color: #333;
+}
+.btn-detener:hover {
+    background: #ffbf33;
+}
+
+.btn-reset {
+    background: #dc3545;
+    color: white;
+}
+.btn-reset:hover {
+    background: #ff4a5a;
+}
+.dispensador-input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    border: none;
+    text-align: center;
+    font-size: 16px;
+}
