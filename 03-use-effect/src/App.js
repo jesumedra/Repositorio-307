@@ -1,5 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
+import Componente from './components/Componente';
 
 
 function App() {
@@ -8,7 +9,12 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <div>
-        
+          <Componente
+            nombre="Jesus"
+            apellido="Medrano"
+            segundoapellido="Patino"
+
+          />
         </div>
       </header>
     </div>
